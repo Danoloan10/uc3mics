@@ -10,14 +10,16 @@
 import http.cookiejar as cookielib
 from bs4 import BeautifulSoup as bs
 import cgi
-import cgitb
 import mechanize
 import os
 import getpass
 import sys
 import base64
 
-cgitb.enable(display=0, logdir="/var/log/uc3mics"))
+# uncomment for debug
+# import cgitb
+# cgitb.enable(display=0, logdir="/var/log/uc3mics"))
+
 print("Content-Type: text/calendar\r\n\r\n")
 
 user   = None    # NIA
