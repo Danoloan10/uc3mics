@@ -23,7 +23,7 @@ sustituyendo `EXP` y `PER` con los valores anteriores:
 ```
 <cgi-uri>?exp=EXP&per=PER
 ```
-La petición HTTP debe tener **la cabezera 'Authorization' conteniendo el NIA y la contraseña codificados en base64** (esto lo hacen algunas aplicaciones, ver [Sincronización en Android](#sincronización-en-android)),
+La petición HTTP debe tener **la cabecera 'Authorization' de tipo 'Basic' conteniendo el NIA y la contraseña codificados en base64** (esto lo hacen algunas aplicaciones, ver [Sincronización en Android](#sincronización-en-android)),
 y devolverá entonces el fichero ICS.
 
 No se puede recomendar lo suficiente el uso de HTTPS en un servicio como este,
